@@ -1,0 +1,8 @@
+<!-- <p *ngFor="let item of list">{{item.name}}</p> -->
+
+
+<!-- ANGULAR 17 SONRASI -->
+
+@for (item of list; track $index) {
+    <p>{{item.name}} {{$index}}</p>
+} 
