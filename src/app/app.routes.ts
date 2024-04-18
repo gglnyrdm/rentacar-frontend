@@ -2,6 +2,8 @@ import { Routes } from '@angular/router';
 import { HomePageComponent } from './routers/home-page/home-page.component';
 import { MainLayoutComponent } from './shared/layouts/main-layout/main-layout.component';
 import { NotFoundPageComponent } from './routers/not-found-page/not-found-page.component';
+import { ModelsListComponent } from './features/models/components/models-list/models-list.component';
+import { BrandListComponent } from './features/models/components/brand-list/brand-list.component';
 
 export const routes: Routes = [
     {
@@ -20,6 +22,14 @@ export const routes: Routes = [
                 path: "",
                 pathMatch: 'full',
                 component: HomePageComponent,
+            },
+            {
+                path: 'models',
+                component: ModelsListComponent,
+            },
+            {
+                path: 'brands',
+                component: BrandListComponent,
             }
         ]
         // children: [

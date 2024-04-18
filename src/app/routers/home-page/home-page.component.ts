@@ -10,7 +10,7 @@ import { BrandListComponent } from '../../features/models/components/brand-list/
     standalone: true,
     templateUrl: './home-page.component.html',
     styleUrl: './home-page.component.scss',
-    imports: [CommonModule, RouterModule, MainLayoutComponent,ModelsListComponent,BrandListComponent]
+    imports: [CommonModule, MainLayoutComponent,ModelsListComponent,BrandListComponent]
 })
 export class HomePageComponent {
   counter = 0; //sayı atadığımız için direk tipi number oldu

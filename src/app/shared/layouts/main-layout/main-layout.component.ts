@@ -4,6 +4,7 @@ import { NavbarComponent } from '../../components/navbar/navbar.component';
 import { FooterComponent } from '../../components/footer/footer.component';
 import { RouterModule } from '@angular/router';
 
+
 @Component({
   selector: 'app-main-layout',
   standalone: true,

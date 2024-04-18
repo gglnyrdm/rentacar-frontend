@@ -1,5 +1,5 @@
 <!-- <p *ngFor="let item of list">{{item.name}}</p> -->
-<p *ngFor="let item of list; let i = index">{{ item.name }} {{ i }}</p>
+<!-- <p *ngFor="let item of list; let i = index">{{ item.name }} {{ i }}</p> -->
 
 <!-- ANGULAR 17 SONRASI -->
 
@@ -8,3 +8,22 @@
 }  -->
 <!-- model-list.ts dosyasındaki list i döngüye sokup ismini sayfaya yazdırır. -->
 <!-- ANCAK BİZ DATAYI BACKENDDEN ALCAZ. -->
+
+<div class="container">
+    <div class="row">
+      <div class="col">
+        <h3>Models</h3>
+        <div class="card">
+          <div class="card-body">
+            <ul class="list-group">
+              <li class="list-group-item" *ngFor="let model of list">
+                {{ model.name }}
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
