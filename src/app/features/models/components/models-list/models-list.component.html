@@ -1,8 +1,10 @@
 <!-- <p *ngFor="let item of list">{{item.name}}</p> -->
-
+<p *ngFor="let item of list; let i = index">{{ item.name }} {{ i }}</p>
 
 <!-- ANGULAR 17 SONRASI -->
 
-@for (item of list; track $index) {
+<!-- @for (item of list; track $index) {
     <p>{{item.name}} {{$index}}</p>
-} 
+}  -->
+<!-- model-list.ts dosyasındaki list i döngüye sokup ismini sayfaya yazdırır. -->
+<!-- ANCAK BİZ DATAYI BACKENDDEN ALCAZ. -->

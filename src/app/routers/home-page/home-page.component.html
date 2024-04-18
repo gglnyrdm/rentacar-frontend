@@ -1,0 +1,28 @@
+<!-- <app-main-layout></app-main-layout> 
+!!Buradaki içeriği yukarıdaki html e sarsaydık footer works! ve navbar works!
+2 kere yazılmış olacaktı. iç içe sarmış gibi olacaktık-->
+    <h1>Rent A Car</h1>
+    <p>Find the best car for you!</p>
+    <h3>MODELS</h3>
+    <app-models-list></app-models-list>
+    <h3>BRANDS</h3>
+    <app-brand-list></app-brand-list>
+
+    <ng-template>
+    Counter: {{ counter }} 
+    <!-- bu şekilde home-page-component.cts deki değişkeni çağırdık -->
+    <button (click)="sumCounter(1)">+</button>
+    <button (click)="sumCounter(-1)">-</button>
+
+
+    <!-- koşul geçmek için ngFor kullanılır -->
+    <p *ngIf="counter === 0">Counter is zero</p>
+    <p *ngIf="counter > 0">Counter is positive</p>
+
+    <!-- Angular 17 sonrası koşullar şu şekilde yapılabilir: -->
+
+    @if (isCounterNegative) {
+        <p>Counter is negative</p>
+    }
+</ng-template>
+<!-- !!!Bu kısmı özel olarak çağırmadıkça gelmeyecek. bunu ng-template ile yaptık -->
